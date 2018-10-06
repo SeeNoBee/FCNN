@@ -13,6 +13,8 @@ add_executable(FCNN src/main.cpp)
 
 target_include_directories(FCNN PUBLIC include)
 
+set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/build CACHE PATH "" FORCE)
+
 install(TARGETS FCNN
 RUNTIME DESTINATION bin)
 
